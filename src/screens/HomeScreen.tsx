@@ -11,6 +11,7 @@ import {
 import recentNews from '../data/recentNews.json';
 import recentArticles from '../data/recentArticles.json';
 import trending from '../data/trending.json';
+import {version} from '../../package.json';
 
 const renderArticle = ({item}: any) => (
   <Card mode="contained" style={styles.cardWidth}>
@@ -30,6 +31,7 @@ const HomeScreen = () => {
   return (
     <ScrollView style={styles.container}>
       <View style={styles.header}>
+        <Text>News app version: {version}</Text>
         <Text variant="titleLarge" style={styles.headerTitle}>
           Trending
         </Text>
