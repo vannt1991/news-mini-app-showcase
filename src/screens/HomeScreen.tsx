@@ -30,8 +30,8 @@ const showNotImplementedAlert = () => Alert.alert('Not implemented yet');
 const HomeScreen = () => {
   return (
     <ScrollView style={styles.container}>
+      <Text style={{color:'grey', paddingLeft: 18,}}>News app version: {version}</Text>
       <View style={styles.header}>
-        <Text>News app version: {version}</Text>
         <Text variant="titleLarge" style={styles.headerTitle}>
           Trending
         </Text>
